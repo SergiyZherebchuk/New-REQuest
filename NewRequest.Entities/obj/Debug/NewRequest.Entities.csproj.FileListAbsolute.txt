@@ -1,0 +1,20 @@
+E:\Academy\NewRequest\NewRequest.Entities\bin\Debug\NewRequest.Entities.dll.config
+E:\Academy\NewRequest\NewRequest.Entities\bin\Debug\NewRequest.Entities.dll
+E:\Academy\NewRequest\NewRequest.Entities\bin\Debug\NewRequest.Entities.pdb
+E:\Academy\NewRequest\NewRequest.Entities\bin\Debug\EntityFramework.dll
+E:\Academy\NewRequest\NewRequest.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\Academy\NewRequest\NewRequest.Entities\bin\Debug\EntityFramework.xml
+E:\Academy\NewRequest\NewRequest.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\Academy\NewRequest\NewRequest.Entities\obj\Debug\NewRequest.Entities.dll
+E:\Academy\NewRequest\NewRequest.Entities\obj\Debug\NewRequest.Entities.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Debug\NewRequest.Entities.dll.config
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Debug\NewRequest.Entities.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Debug\NewRequest.Entities.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Debug\EntityFramework.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Debug\EntityFramework.SqlServer.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Debug\Newtonsoft.Json.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Debug\EntityFramework.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Debug\EntityFramework.SqlServer.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\obj\Debug\NewRequest.Entities.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\obj\Debug\NewRequest.Entities.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\obj\Debug\NewRequest.Entities.csprojResolveAssemblyReference.cache

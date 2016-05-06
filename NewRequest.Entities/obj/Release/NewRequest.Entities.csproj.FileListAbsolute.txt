@@ -1,0 +1,11 @@
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Release\NewRequest.Entities.dll.config
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Release\NewRequest.Entities.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Release\NewRequest.Entities.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Release\EntityFramework.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Release\EntityFramework.SqlServer.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Release\EntityFramework.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Release\EntityFramework.SqlServer.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\obj\Release\NewRequest.Entities.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\obj\Release\NewRequest.Entities.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\bin\Release\Newtonsoft.Json.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.Entities\obj\Release\NewRequest.Entities.csprojResolveAssemblyReference.cache

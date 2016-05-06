@@ -1,0 +1,33 @@
+﻿<div ng-controller="GamesController"
+     ng-init="getAnouncementGames();">
+
+    <div style="height:20px;"></div>
+
+    <div class="form-group has-feedback">
+        <input type="text" class="form-control" ng-model="searchGame" placeholder="Search..." />
+        <i class="glyphicon glyphicon-search form-control-feedback"></i>
+    </div>
+
+    <div ng-repeat="games in AnounceGames | filter: searchGame">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h1 class="panel-title"> {{games.Name}} </h1>
+            </div>
+
+            <div class="panel-body">
+                <h4> Date Start: {{games.DateStart | date:"MM/dd/yyyy ' ' h:mma"}}</h4>
+
+                <h4> Date End: {{games.DateEnd | date:"MM/dd/yyyy ' ' h:mma"}} </h4>
+
+                <a href="#/GameInfo/{{games.Id}}">
+                    <h4> More Information </h4>
+                </a>
+
+                <a href="#/Statistic/{{games.Id}}">
+                    <h4> Statistic </h4>
+                </a>
+            </div>                
+        </div>
+    </div>
+
+</div>

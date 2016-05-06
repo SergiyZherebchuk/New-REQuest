@@ -1,0 +1,46 @@
+﻿<div class="container"
+     ng-controller="GamesController">
+
+    <div style="height:20px;"></div>
+
+    <div class="form-group has-feedback">
+        <input type="text" class="form-control" ng-model="searchGame" placeholder="Search..." />
+        <i class="glyphicon glyphicon-search form-control-feedback"></i>
+    </div>
+
+    <table class="table table-hover container"
+           style="width:75%; align-content:center">
+
+        <thead>
+            <tr>
+                <th colspan="5">
+                    <h2 style="text-align:center"> My Games </h2>
+                </th>
+            </tr>
+            <tr>
+                <th align="center" style="text-align:center">#</th>
+                <th align="center" style="text-align:center">Name</th>
+                <th align="center" style="text-align:center">Date Start</th>
+                <th align="center" style="text-align:center">Date End</th>
+                <th align="center" style="text-align:center">Payment</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody style="text-align:center">
+            <tr ng-repeat="myGames in MyGames | filter: searchGame">
+                <td>{{myGames.Id}}</td>
+                <td>
+                    <a href="#/Authors/EditGame/{{myGames.Id}}">{{myGames.Name}}</a>
+                </td>
+                <td>{{myGames.DateStart | date:"MM/dd/yyyy ' ' h:mma"}}</td>
+                <td>{{myGames.DateEnd | date:"MM/dd/yyyy ' ' h:mma"}}</td>
+                <td>{{myGames.Payment}}</td>
+                <td>
+                    <button style="width: 30px; height: 30px;"
+                            class="glyphicon glyphicon-trash"
+                            ng-click="deleteGame(myGames.Id)" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

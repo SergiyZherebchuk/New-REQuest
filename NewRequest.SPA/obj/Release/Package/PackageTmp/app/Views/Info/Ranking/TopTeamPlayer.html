@@ -1,0 +1,32 @@
+﻿<div class="container"
+     style="width: 70%;">
+
+    <div ng-controller="RankingController"
+         ng-init="getAllTeamPlayerRank();">
+
+        <h1 style="text-align:center">Top team player</h1>
+
+        <table class="table table-striped" style="align-content:center">
+            <thead>
+                <tr>
+                    <th align="center" style="text-align:center; width:30px">#</th>
+                    <th align="center" style="text-align:center">Name</th>
+                    <th align="center" style="text-align:center; width:100px">Points</th>
+                </tr>
+            </thead>
+            <tbody style="text-align:center">
+                <tr data-ng-repeat="rank in Ranking">
+                    <td>
+                        {{rank.Rank}}
+                    </td>
+                    <td>
+                        <a> {{rank.Name}} </a>
+                    </td>
+                    <td>
+                        {{rank.Points}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

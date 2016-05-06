@@ -1,0 +1,94 @@
+﻿<div ng-controller="RealGameController"
+     ng-init="getGame()">
+
+    <div ng-show="!ToStart" style="color:red" class="myClass">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <h3> {{ASTimer}} </h3>
+            <a href="#/GameInfo/{{gameId}}" style="text-align:center;">Go to game information</a>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+    <div ng-show="ToStart" class="col-sm-12 myClass">
+        <div>
+            <h3>Level {{Level.JNumber}} with {{AllLevels}}. {{Level.Name}} </h3>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success progress-bar-striped"
+                 role="progressbar"
+                 aria-valuenow="{{Level.JNumber / (AllLevels + 1) * 100 | number:0 }}"
+                 aria-valuemin="0"
+                 aria-valuemax="100"
+                 style="width:{{Level.JNumber / (AllLevels + 1) * 100 | number:0 }}%">
+                {{Level.JNumber / (AllLevels + 1) * 100 | number:0 }}% Complete
+            </div>
+        </div>
+
+        <div style="color:red">
+            {{ASTimer}}
+        </div>
+
+        <div ng-show="MyLevelType !== null || MyLevelType !== undefined">
+            <h5> Level type - <label ng-bind="MyLevelType"></label> </h5>
+        </div>
+
+
+        <blockquote>
+            <h3 id="tasks">
+                {{Task}}
+            </h3>
+        </blockquote> <br />      
+        
+        <div class="container">
+            <form class="form-horizontal" role="form">
+                <div class="form-group col-sm-3">
+                    <input type="text"
+                           class="form-control"
+                           ng-model="MyCode"
+                           placeholder="Code" />
+                </div>
+                <div class="form-group col-sm-1">
+                    <input type="button"
+                           class="btn btn-success"
+                           ng-click="postCodes()"
+                           value=">>>" />
+                </div>
+
+            </form>
+        </div>
+
+        <div style="height:10px">
+
+        </div>
+
+        <div ng-show="levelType === 2">
+            <div ng-repeat="codes in SectorCodes">                
+                Sector <label> #{{codes.Sector}} </label> :
+                <span style="color:green"> {{codes.Code1 || ''}} </span>
+            </div>
+        </div>
+
+        <div ng-show="levelType === 3">
+            <div ng-repeat="codes in SectorCodes">
+                {{codes.Name}}:
+                <span style="color:green"> {{codes.Code1}} </span>
+            </div>
+        </div>
+
+        <div ng-repeat="oneTip in Tips">
+            <blockquote style="height:auto">
+                <h4>
+                    {{oneTip.Tip}}
+                </h4>
+            </blockquote>
+        </div>
+
+        <div ng-show="LevelType == 3">
+            <table>
+
+            </table>
+        </div>
+    </div>
+        
+</div>

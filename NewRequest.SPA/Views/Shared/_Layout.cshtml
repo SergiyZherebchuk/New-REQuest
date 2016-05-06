@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REQuest</title>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <link href="~/Content/team.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/mySitesPage.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery.cookie-1.4.1.min.js"></script>
+
+
+    <script src="~/Scripts/angular.js"></script>
+    <script src="~/Scripts/angular-route.js"></script>
+    <script src="~/Scripts/angular-dragdrop.js"></script>
+    <script src="~/Scripts/angular-drag-and-drop-lists.js"></script>
+    <script src="~/Scripts/angular-cookies.min.js"></script>
+
+    <script src="~/Scripts/moment-with-locales.min.js"></script>
+    <script src="~/Scripts/bootstrap-datetimepicker.min.js"></script>
+
+
+
+    <style>
+      .thumbnail { height: 280px !important; }
+      .btn-droppable { width: 180px; height: 30px; padding-left: 4px; }
+      .btn-draggable { width: 160px; }
+    </style>
+
+
+    @Scripts.Render("~/bundles/myApp")
+
+
+    @*<script src="~/app/Scripts/app.js"></script>
+
+    <script src="~/app/Services/GamesService.js"></script>
+    <script src="~/app/Services/TimesService.js"></script>
+    <script src="~/app/Services/UsersService.js"></script>
+    <script src="~/app/Services/HelpService.js"></script>
+    <script src="~/app/Services/TeamService.js"></script>
+    <script src="~/app/Services/UTSService.js"></script>
+    <script src="~/app/Services/AllLevelService.js"></script>
+    <script src="~/app/Services/GameTaskService.js"></script>
+    <script src="~/app/Services/GameTipsService.js"></script>
+    <script src="~/app/Services/LevelTypeService.js"></script>
+    <script src="~/app/Services/CodesService.js"></script>
+    <script src="~/app/Services/RankingService.js"></script>
+    <script src="~/app/Services/RealGameService.js"></script>
+    <script src="~/app/Services/StatisticService.js"></script>
+    <script src="~/app/Services/AuthService.js"></script>
+    <script src="~/app/Services/CloseSectorService.js"></script>
+
+    <script src="~/app/Controllers/GamesController.js"></script>
+    <script src="~/app/Controllers/RankingController.js"></script>
+    <script src="~/app/Controllers/HomeController.js"></script>
+    <script src="~/app/Controllers/LevelController.js"></script>
+    <script src="~/app/Controllers/LevelsController.js"></script>
+    <script src="~/app/Controllers/GameInfoController.js"></script>
+    <script src="~/app/Controllers/RealGameController.js"></script>
+    <script src="~/app/Controllers/TeamController.js"></script>
+    <script src="~/app/Controllers/OneTeamController.js"></script>
+    <script src="~/app/Controllers/MyTeamController.js"></script>
+    <script src="~/app/Controllers/StatisticController.js"></script>
+    <script src="~/app/Controllers/AuthController.js"></script>*@
+    
+    @*@NewRequest.SPA.Resources.GlobalRes*@
+    
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body ng-app="requestApp" >
+    <header ng-controller="AuthController">
+        <nav class="nnavbar navbar-default navbar-fixed-top"
+             role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="~/#/">
+                        <img src="~/Photo/request.png" style="height: 25px" />
+                    </a>
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href=""
+                               class="dropdown-toggle"
+                               data-toggle="dropdown"
+                               role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                Games
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <a href="~/#/Games/Active"> Active </a>
+                                </li>
+
+                                <li>
+                                    <a href="~/#/Games/Archives"> Аrchives </a>
+                                </li>
+
+                                <li>
+                                    <a href="~/#/Games/Announcement"> Anouncement </a>
+                                </li>
+
+                                <!--
+                                <li>
+                                    <a href="#/Games/Info"> Info </a>
+                                </li>
+                                -->
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href=""
+                               class="dropdown-toggle"
+                               data-toggle="dropdown"
+                               role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                Teams
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="~/#/Team"> All Teams </a>
+                                </li>
+
+                                <li>
+                                    <a href="~/#/MyTeam"> My Team </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href=""
+                               class="dropdown-toggle"
+                               data-toggle="dropdown"
+                               role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                From Authors
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="~/#/Authors/MyGames"> My Games </a>
+                                </li>
+
+                                <li>
+                                    <a href="~/#/Authors/NewGame"> New Game </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href=""
+                               class="dropdown-toggle"
+                               data-toggle="dropdown"
+                               role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                Info
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="~/#/Info/About"> About </a>
+                                </li>
+
+                                <li>
+                                    <a href="~/#/Info/Contacts"> Contacts </a>
+                                </li>
+
+                                <li>
+                                    <a href="~/#/Info/Ranking"> Ranking </a>
+                                </li>
+                            </ul>
+                        </li>
+
+
+                        @*<li>
+                            <a href=""
+                               class="dropdown-toggle"
+                               data-toggle="dropdown"
+                               role="button"
+                               aria-haspopup="true"
+                               aria-expanded="false">
+                                @NewRequest.SPA.Resources.GlobalRes.Language
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink("English", "Change", "Language", new { LangAbbrevation = "en" }, null)</li>
+                                <li>@Html.ActionLink("Русский", "Change", "Language", new { LangAbbrevation = "ru" }, null)</li>
+                                <li>@Html.ActionLink("Українська", "Change", "Language", new { LangAbbrevation = "uk" }, null)</li>
+                            </ul>
+                        </li>*@
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ng-show="globals !== undefined" class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> {{MyLogin}} <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a ng-click="logout()">Log Out</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li ng-show="globals === undefined">
+                            <a href="~/#/register"><span class="glyphicon glyphicon-user"></span> @NewRequest.SPA.Resources.GlobalRes.Register</a>
+                        </li>
+                        <li ng-show="globals === undefined">
+                            <a href="~/#/login"><span class="glyphicon glyphicon-log-in"></span> @NewRequest.SPA.Resources.GlobalRes.SignUp </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+
+    <hr />
+    <footer style="text-align:center;">
+        <p>&copy; 2015 - @DateTime.Now.Year - REQuest</p>
+    </footer>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

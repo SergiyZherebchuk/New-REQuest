@@ -1,0 +1,43 @@
+﻿<div class="container"
+     ng-controller="TeamController"
+     ng-init="getAllTeam()">
+
+    <div style="height:20px;"></div>
+
+    <div class="form-group has-feedback">
+        <input type="text" class="form-control" ng-model="searchTeam" placeholder="Search..." />
+        <i class="glyphicon glyphicon-search form-control-feedback"></i>
+    </div>
+
+    <table class="table table-hover container" style="width:75%; align-content:center">
+        <thead>
+            <tr>
+                <th colspan="4">
+                    <h2 style="text-align:center"> All Team </h2>
+                </th>
+            </tr>
+            <tr>
+                <th align="center" style="text-align:center">Id</th>
+                <th align="center" style="text-align:center">Name</th>
+                <th align="center" style="text-align:center">Captain</th>
+            </tr>
+        </thead>
+        <tbody style="text-align:center">
+            <tr ng-repeat="team in Teams | filter: searchTeam">
+                <td>
+                    {{team.Id}}
+                </td>
+                <td>
+                    <a href="#/Team/{{team.Id}}">
+                        {{team.Name}}
+                    </a>
+                </td>
+                <td>
+                    <a href="#/User/{{team.CaptainId}}">
+                        {{team.Captain}}
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

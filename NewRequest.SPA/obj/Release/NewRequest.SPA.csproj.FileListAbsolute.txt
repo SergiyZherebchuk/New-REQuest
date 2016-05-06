@@ -1,0 +1,130 @@
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\csc.exe
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\System.Collections.Immutable.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\System.Reflection.Metadata.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\vbc.exe
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\VBCSCompiler.exe
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\roslyn\VBCSCompiler.exe.config
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\NewRequest.SPA.dll.config
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\NewRequest.SPA.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\NewRequest.SPA.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\uk\NewRequest.SPA.resources.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\ru\NewRequest.SPA.resources.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\Antlr3.Runtime.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\Microsoft.Web.Infrastructure.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\NewRequest.DAL.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\NewRequest.Entities.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\Newtonsoft.Json.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Net.Http.Formatting.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Helpers.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Http.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Http.WebHost.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Mvc.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Optimization.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Razor.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.Deployment.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.Razor.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\WebGrease.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\EntityFramework.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\NewRequest.DAL.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\NewRequest.Entities.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\Antlr3.Runtime.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\Newtonsoft.Json.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Net.Http.Formatting.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Helpers.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Http.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Http.WebHost.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Mvc.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Optimization.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.Razor.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.Deployment.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.Razor.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\EntityFramework.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.csprojResolveAssemblyReference.cache
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.Resources.GlobalRes.resources
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.Resources.GlobalRes.uk.resources
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.Resources.GlobalRes.ru.resources
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.csproj.GenerateResource.Cache
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\obj\Release\uk\NewRequest.SPA.resources.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\obj\Release\ru\NewRequest.SPA.resources.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\EntityFramework.SqlServer.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\EntityFramework.SqlServer.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\csc.exe
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\System.Collections.Immutable.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\System.Reflection.Metadata.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\vbc.exe
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\VBCSCompiler.exe
+E:\Academy\NewRequest\NewRequest.SPA\bin\roslyn\VBCSCompiler.exe.config
+E:\Academy\NewRequest\NewRequest.SPA\bin\NewRequest.SPA.dll.config
+E:\Academy\NewRequest\NewRequest.SPA\bin\NewRequest.SPA.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\NewRequest.SPA.pdb
+E:\Academy\NewRequest\NewRequest.SPA\bin\uk\NewRequest.SPA.resources.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\ru\NewRequest.SPA.resources.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\Antlr3.Runtime.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\EntityFramework.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\EntityFramework.SqlServer.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\Microsoft.Web.Infrastructure.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\NewRequest.DAL.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\NewRequest.Entities.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\Newtonsoft.Json.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Net.Http.Formatting.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Helpers.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Http.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Http.WebHost.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Mvc.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Optimization.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Razor.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.Deployment.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.Razor.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\WebGrease.dll
+E:\Academy\NewRequest\NewRequest.SPA\bin\NewRequest.DAL.pdb
+E:\Academy\NewRequest\NewRequest.SPA\bin\NewRequest.Entities.pdb
+E:\Academy\NewRequest\NewRequest.SPA\bin\Antlr3.Runtime.pdb
+E:\Academy\NewRequest\NewRequest.SPA\bin\EntityFramework.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\EntityFramework.SqlServer.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\Newtonsoft.Json.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Net.Http.Formatting.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Helpers.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Http.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Http.WebHost.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Mvc.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Optimization.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.Razor.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.Deployment.xml
+E:\Academy\NewRequest\NewRequest.SPA\bin\System.Web.WebPages.Razor.xml
+E:\Academy\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.csprojResolveAssemblyReference.cache
+E:\Academy\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.Resources.GlobalRes.resources
+E:\Academy\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.Resources.GlobalRes.uk.resources
+E:\Academy\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.Resources.GlobalRes.ru.resources
+E:\Academy\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.csproj.GenerateResource.Cache
+E:\Academy\NewRequest\NewRequest.SPA\obj\Release\uk\NewRequest.SPA.resources.dll
+E:\Academy\NewRequest\NewRequest.SPA\obj\Release\ru\NewRequest.SPA.resources.dll
+E:\Academy\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.dll
+E:\Academy\NewRequest\NewRequest.SPA\obj\Release\NewRequest.SPA.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\fonts\fontawesome-webfont.woff
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\fonts\glyphicons-halflings-regular.woff
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\fonts\FontAwesome.otf
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\fonts\fontawesome-webfont.ttf
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\fonts\Lato-Regular.ttf
+E:\REQuest\Web Site\NewRequest\NewRequest.SPA\bin\fonts\glyphicons-halflings-regular.ttf

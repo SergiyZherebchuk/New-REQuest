@@ -1,0 +1,60 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="form-group">
+    <h2 style="text-align:center">Sign In</h2>
+</div>
+
+<div>
+    <form class="form-horizontal"
+          id="authForm"
+          name="authForm"
+          action="@Url.Action("Index", "Auth")"
+          role="form"
+          method="post">
+
+        <div class="form-group">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">
+                    Login
+                </label>
+
+                <div class="col-sm-5">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Your login"
+                           name="login"
+                           ng-model="Login"
+                           required />
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">
+                Password
+            </label>
+
+            <div class="col-sm-5">
+                <input type="password"
+                       class="form-control"
+                       placeholder="Your password"
+                       name="password"
+                       ng-model="Password"
+                       required />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4"></label>
+            <div class="col-sm-5">
+                <input type="submit"
+                        class="btn btn-success"
+                        ng-disabled="authForm.$invalid"
+                        value="Sign In" />            
+            </div>
+        </div>
+    </form>
+</div>

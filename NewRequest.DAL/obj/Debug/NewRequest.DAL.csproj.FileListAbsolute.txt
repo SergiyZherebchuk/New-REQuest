@@ -1,0 +1,24 @@
+E:\Academy\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.DAL.dll.config
+E:\Academy\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.DAL.dll
+E:\Academy\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.DAL.pdb
+E:\Academy\NewRequest\NewRequest.DAL\bin\Debug\EntityFramework.dll
+E:\Academy\NewRequest\NewRequest.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\Academy\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.Entities.dll
+E:\Academy\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.Entities.pdb
+E:\Academy\NewRequest\NewRequest.DAL\bin\Debug\EntityFramework.xml
+E:\Academy\NewRequest\NewRequest.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\Academy\NewRequest\NewRequest.DAL\obj\Debug\NewRequest.DAL.csprojResolveAssemblyReference.cache
+E:\Academy\NewRequest\NewRequest.DAL\obj\Debug\NewRequest.DAL.dll
+E:\Academy\NewRequest\NewRequest.DAL\obj\Debug\NewRequest.DAL.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.DAL.dll.config
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.DAL.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.DAL.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\bin\Debug\EntityFramework.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.Entities.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\bin\Debug\NewRequest.Entities.pdb
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\bin\Debug\EntityFramework.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\obj\Debug\NewRequest.DAL.csprojResolveAssemblyReference.cache
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\obj\Debug\NewRequest.DAL.dll
+E:\REQuest\Web Site\NewRequest\NewRequest.DAL\obj\Debug\NewRequest.DAL.pdb

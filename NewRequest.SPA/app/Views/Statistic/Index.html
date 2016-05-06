@@ -1,0 +1,37 @@
+﻿<div ng-controller="StatisticController">
+
+    <table class="table table-hover container"
+           style="width:75%; align-content:center">
+
+        <thead>
+            <tr>
+                <th colspan="5">
+                    <h2 style="text-align:center"> {{ThisGame.Name}} </h2>
+                </th>
+            </tr>
+            <tr>
+                <th align="center" style="text-align:center">Level</th>
+                <th align="center" style="text-align:center">Member</th>
+                <th align="center" style="text-align:center">Date End</th>
+                <th align="center" style="text-align:center">Position</th>
+            </tr>
+        </thead>
+        <tbody style="text-align:center">
+            <tr data-ng-repeat="stat in Statistic">
+                <td>
+                    {{stat.Level}}
+                </td>
+                <td>
+                    <a ng-show="ThisGame.GameType === 1" href="#/User/{{stat.UserId}}"> {{stat.User}} </a>
+                    <a ng-show="ThisGame.GameType === 2" href="#/Team/{{stat.TeamId}}"> {{stat.Team}} </a>
+                </td>
+                <td>
+                    {{stat.DateEnd | date:"MM/dd/yyyy ' ' h:mma"}}
+                </td>
+                <td>
+                    {{stat.Possition}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

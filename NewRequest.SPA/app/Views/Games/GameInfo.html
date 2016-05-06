@@ -1,0 +1,34 @@
+﻿<div class="panel panel-primary"
+     ng-controller="GameInfoController">
+
+    <div class="panel-heading">
+        <h1 class="panel-title"> {{Game.Name}} </h1>
+    </div>
+
+    <div class="panel-body">
+
+        <div>
+            <h3>Game Information:</h3>
+            {{Game.Info}}
+        </div>
+
+        <div>
+            <h3>Date Start: {{Game.DateStart | date:"MM/dd/yyyy ' ' h:mma"}}</h3>
+        </div>
+
+        <div>
+            <h3>Date End: {{Game.DateEnd | date:"MM/dd/yyyy ' ' h:mma"}}</h3>
+        </div>
+
+        <div ng-show="Game.Price !== null">
+            <h3>Price: {{Game.Price}}</h3>
+        </div>
+    </div>
+
+    <div class="panel-footer">
+        
+        <a style="width:50%; float:left;" href="#/Statistic/{{gameId}}">
+            <h4> Statistic >>> </h4>
+        </a>
+    </div>
+</div>

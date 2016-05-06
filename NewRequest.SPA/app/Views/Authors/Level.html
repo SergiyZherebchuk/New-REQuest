@@ -1,0 +1,486 @@
+﻿<div class="container"
+     ng-controller="LevelController">
+
+    <div class="form-group">
+        <h2>Level {{Level.JNumber}}. {{Level.Name}}. Game {{Game.Name}}</h2>
+    </div>
+
+    <ul class="nav nav-tabs" role="tablist">
+        <li ng-class="{active: tab == 'task'}">
+            <a ng-click='tab = "task"'>
+                Task
+            </a>
+        </li>
+
+        <li ng-class="{active: tab == 'tip'}">
+            <a ng-click='tab = "tip"'>
+                Tip
+            </a>
+        </li>
+
+        <li ng-class="{active: tab == 'code'}">
+            <a ng-click='tab = "code"'>
+                Code
+            </a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div ng-show="tab === 'task'">
+            <form role="form"
+                  class="form-horizontal">
+                
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <input type="text" 
+                               id="Id" 
+                               readonly="readonly" 
+                               ng-model="TaskId" 
+                               style="display:none" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name"
+                           class="col-sm-2 control-label">
+                        Task
+                    </label>
+
+                    <div class="col-sm-8">
+                        <textarea class="form-control"
+                                  placeholder="Task..."
+                                  ng-model="Task"
+                                  rows="8"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">
+                        Autoswitch
+                    </label>
+
+                    <div class="col-sm-10">
+                        <label class="checkbox-inline">
+                            <input type="radio"
+                                   ng-model="ats"
+                                   ng-selected="ats === 'yes'"
+                                   value="yes">
+                            Yes
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="radio"
+                                   ng-model="ats"
+                                   ng-selected="ats === 'no'"
+                                   value="no"> No
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group"
+                     ng-show="ats === 'yes'">
+                    <label class="col-sm-2 control-label">
+                        Time
+                    </label>
+
+                    <div class="col-sm-10">
+
+                        <label class="col-md-2 control-label">
+                            Hours:
+                        </label>
+                        <input class="form-control col-md-2"
+                               ng-model="Hours"
+                               type="number"
+                               min="0"
+                               max="23"
+                               style="width:auto"
+                               title="Choose hours" />
+
+
+                        <label class="col-md-2 control-label">
+                            Minutes:
+                        </label>
+                        <input class="form-control col-md-2"
+                               ng-model="Minute"
+                               type="number"
+                               min="0"
+                               max="59"
+                               style="width:auto"
+                               title="Choose minutes" />
+
+                        <label class="col-md-2 control-label">
+                            Seconds:
+                        </label>
+                        <input class="form-control col-md-2"
+                               ng-model="Second"
+                               type="number"
+                               min="0"
+                               max="59"
+                               style="width:auto"
+                               title="Choose seconds" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit"
+                               class="btn btn-info"
+                               value="Save"
+                               ng-click="saveTask()" />
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div ng-show="tab === 'tip'">
+            <form role="form"
+                  class="form-horizontal">
+
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <input type="text" id="Id" readonly="readonly" ng-model="TipId" style="display:none" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="name"
+                           class="col-sm-2 control-label">
+                        Tip
+                    </label>
+
+                    <div class="col-sm-8">
+                        <textarea class="form-control"
+                                  placeholder="Tip..."
+                                  ng-model="Tip"
+                                  rows="8"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label">
+                        Time
+                    </label>
+
+                    <div class="col-sm-10">
+
+                        <label class="col-md-2 control-label">
+                            Minutes:
+                        </label>
+                        <input class="form-control col-md-2"
+                               ng-model="TipMinute"
+                               type="number"
+                               min="0"
+                               max="59"
+                               style="width:auto"
+                               title="Choose minutes" />
+
+                        <label class="col-md-2 control-label">
+                            Seconds:
+                        </label>
+                        <input class="form-control col-md-2"
+                               ng-model="TipSecond"
+                               type="number"
+                               min="0"
+                               max="59"
+                               style="width:auto"
+                               title="Choose seconds" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-9 col-md-offset-3">
+                        <input type="submit"
+                               class="btn btn-info"
+                               value="Save"
+                               ng-click="saveTip()" />
+                    </div>
+                </div>
+            </form>
+
+            <div class="form-group">
+                <h2 style="text-align:center">All tips</h2>
+            </div>
+
+            <table class="table table-striped container"
+                   style="width:75%; align-content:center">
+
+                <thead>
+                    <tr>
+                        <th align="center" style="text-align:center">Tip</th>
+                        <th align="center" style="text-align:center">Time(seconds)</th>
+                        <th align="center" style="text-align:center; width: 50px;"></th>
+                        <th align="center" style="text-align:center; width: 50px;"></th>
+                    </tr>
+                </thead>
+                <tbody style="text-align:center">
+                    <tr data-ng-repeat="allTip in AllTips">
+                        <td>
+                            {{allTip.Tip}}
+                        </td>
+
+                        <td>
+                            {{allTip.Times}}
+                        </td>
+
+                        <td>
+                            <button style="width: 30px; height: 30px;"
+                                    class="glyphicon glyphicon-pencil"
+                                    ng-click="editOneTip(allTip)" />
+                        </td>
+
+                        <td>
+                            <button style="width: 30px; height: 30px;"
+                                    class="glyphicon glyphicon-remove"
+                                    ng-click="deleteOneTip(allTip.Id)" />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div ng-show="tab === 'code'">
+            <form role="form"
+                  class="form-horizontal">
+
+                <div class="form-group">
+                    <label for="name"
+                           class="col-sm-4 control-label">
+                        Code type
+                    </label>
+
+                    <div class="col-sm-4">
+                        <select class="form-control"
+                                ng-model="CodeType"                                
+                                ng-disabled="disableCodeTypeMark">
+                            <option value="1" ng-selected="CodeType === 1"> One sector </option>
+                            <option value="2" ng-selected="CodeType === 2"> Many Sectors </option>
+                            <option value="3" ng-selected="CodeType === 3"> Olympian </option>
+                            <option value="4" ng-selected="CodeType === 4"> Agent </option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <input type="submit"
+                               class="btn btn-info"
+                               value="Save"
+                               ng-show="!disableCodeTypeMark"
+                               ng-click="saveLevelType()" />
+                    </div>
+                </div>
+            </form>
+
+            <div ng-show="CodeType === 1 || CodeType === 4">
+                <form role="form"
+                      class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="name"
+                               class="col-sm-4 control-label">
+                            Code
+                        </label>
+                                                
+                        <div>
+                            <input type="text"
+                                   class="form-control"
+                                   readonly="readonly"
+                                   ng-model="CodeId"
+                                   style="display:none" />
+                        </div>
+
+                        <div class="col-sm-4">
+                            <input class="form-control"
+                                   type="text"
+                                   ng-model="Code" />
+                        </div>
+
+                        <div class="col-sm-1">
+                            <input type="submit"
+                                   class="btn btn-info"
+                                   value="Save"
+                                   ng-click="saveOneCode()" />
+                        </div>
+                        <div class="col-sm-1">
+                            <input type="submit"
+                                   class="btn btn-danger"
+                                   value="Remove"
+                                   ng-show="delMark"
+                                   ng-click="deleteOneCode(CodeId)" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div ng-show="CodeType === 2">
+
+                <div class="form-group">
+                    <h2 style="text-align:center"> All sectors </h2>
+                </div>
+
+                <form role="form"
+                      class="form-horizontal"
+                      ng-show="CodeType === 2">
+
+                    <div class="form-group ">
+                        <label for="name"
+                               class="col-sm-4 control-label">
+                            Sector Numbers
+                        </label>
+
+                        <div class="col-sm-4">
+                            <input class="form-control"
+                                   type="number"
+                                   ng-model="NumSectors"
+                                   min="{{SecNum}}"
+                                   max="8" />
+                        </div>
+
+                        <div class="col-sm-4">
+                            <input type="submit"
+                                   class="btn btn-success"
+                                   ng-click="addSector()"
+                                   value="Add new sector" />
+                        </div>
+                    </div>                 
+                </form>
+                
+                <form role="form"
+                      class="form-horizontal">
+
+                    <div data-ng-repeat="oneCode in ManyCodes">
+                        <div class="form-group">
+                            <div class="col-sm-4">
+                                <input type="text" 
+                                       readonly="readonly" 
+                                       ng-model="oneCode.Id" style="display:none" />
+                            </div>
+
+                            <div class="col-sm-1">
+                                <label class="control-label">
+                                    Sector {{oneCode.Sector}}
+                                </label>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <input class="form-control"
+                                       type="text"
+                                       placeholder="Code.."
+                                       ng-model="oneCode.Code1" />
+                            </div>
+
+                            <div class="col-sm-4"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group"
+                         ng-show="SaveManyCode">
+                        <div class="col-sm-4"></div>
+
+                        <input type="submit"
+                               class="btn btn-info col-sm-4"
+                               value="Save"
+                               ng-click="saveManyCodes()" />
+
+                        <div class="col-sm-4"></div>
+                    </div>
+
+                    <div class="form-group"
+                         ng-show="ManyCodes.length !== 0">
+                        <div class="col-sm-4"></div>
+
+                        <input type="submit"
+                               class="btn btn-danger col-sm-4"
+                               value="Delete All"                               
+                               ng-click="deleteManyCodes()" />
+
+                        <div class="col-sm-4"></div>
+                    </div>
+                    
+                </form>
+            </div>
+
+            <div ng-show="CodeType === 3">
+                <form role="form"
+                      class="form-horizontal">
+
+                    <div class="form-group">
+                        <label for="name"
+                               class="col-sm-4 control-label">
+                            Type
+                        </label>
+
+                        <div class="col-sm-4">
+                            <select class="form-control"
+                                    ng-model="OlympType"                    
+                                    ng-disabled="disableCodeTypeMark">
+                                <option value="1" ng-selected="OlympType === 1"> 4-2-1 </option>
+                                <option value="2" ng-selected="OlympType === 2"> 8-4-2-1 </option>
+                            </select>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <input type="submit"
+                                   class="btn btn-info"
+                                   value="Save"
+                                   ng-click="saveOlymp()" />
+                        </div>
+                    </div>
+                </form>
+
+                <form role="form"
+                      class="form-horizontal">
+
+                    <div data-ng-repeat="oneCode in ManyCodes">
+                        <div class="form-group">
+                            <div class="col-sm-4">
+                                <input type="text"
+                                       readonly="readonly"
+                                       ng-model="oneCode.Id" style="display:none" />
+                            </div>
+                            
+                            <div class="col-sm-1">
+                                <label class="control-label">
+                                    {{oneCode.Name}}:
+                                </label>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <input class="form-control"
+                                       type="text"
+                                       placeholder="{{oneCode.Name}}"
+                                       ng-model="oneCode.Code1" />
+                            </div>
+
+                            <div class="col-sm-4"></div>
+                        </div>
+                    </div>
+
+                    <div class="form-group"
+                         ng-show="ManyCodes.length !== 0">
+                        <div class="col-sm-4"></div>
+
+                        <input type="submit"
+                               class="btn btn-info col-sm-4"
+                               value="Save"
+                               ng-click="saveManyCodes()" />
+
+                        <div class="col-sm-4"></div>
+                    </div>
+
+                    <div class="form-group"
+                         ng-show="ManyCodes.length !== 0">
+                        <div class="col-sm-4"></div>
+
+                        <input type="submit"
+                               class="btn btn-danger col-sm-4"
+                               value="Delete All"
+                               ng-click="deleteManyCodes()" />
+
+                        <div class="col-sm-4"></div>
+                    </div>
+
+                </form>
+            </div>        
+        </div>
+    </div>
+</div>

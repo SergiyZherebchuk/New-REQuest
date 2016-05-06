@@ -1,0 +1,74 @@
+﻿<div class="container"
+     ng-controller="MyTeamController">
+
+    <h1 style="text-align:center">{{Team.Name}}</h1>
+
+    <div>
+        <h4> Register Date - {{Team.Register | date:"MM/dd/yyyy ' ' h:mma"}}</h4>
+    </div>
+
+    <div>
+        <h4> Captain - {{Captain}}</h4>
+    </div>
+
+    <div style="height:20px;"></div>
+
+    <div style="width:45%; float:left">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h1 class="panel-title"> Active Player </h1>
+            </div>
+
+            <div class="panel-body">
+                <div ng-repeat="activePlayers in ActivePlayers" class="list-group-item">
+                    <span style="width:92%; height: auto; float: left;"> {{activePlayers.Name}} </span>
+                    <span style="width:8%; height: auto;">{{activePlayers.Point}} </span>
+                </div>
+            </div>
+        </div>
+
+        <div style="height:20px;"></div>
+
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h1 class="panel-title"> Spare Player </h1>
+            </div>
+
+            <div class="panel-body" droppable drop="handleDrop">
+                <div ng-repeat="sparePlayers in SparePlayers" class="list-group-item" draggable item="item">
+                    <span style="width:92%; height: auto; float: left;"> {{sparePlayers.Name}} </span>
+                    <span style="width:8%; height: auto;">{{sparePlayers.Point}} </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width:10%; float:left; border:double white"></div>
+
+    <div style="width:45%; float:left">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h1 class="panel-title"> Want to join </h1>
+            </div>
+
+            <div class="panel-body" id="bin1" droppable drop="handleDrop">
+                <div ng-repeat="joinPlayers in JoinPlayers" class="list-group-item" draggable item="item">
+                    <span style="width:92%; height: auto; float: left;"> {{joinPlayers.Name}} </span>
+                    <span style="width:8%; height: auto;">{{joinPlayers.Point}} </span>
+                </div>
+            </div>
+        </div>
+
+        <div style="height:20px;"></div>
+
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h1 class="panel-title"> Delete Panel </h1>
+            </div>
+
+            <div class="panel-body" id="bin2" droppable drop="handleDrop">
+
+            </div>
+        </div>
+    </div>
+</div>

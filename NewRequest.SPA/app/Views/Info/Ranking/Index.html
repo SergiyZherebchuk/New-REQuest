@@ -1,0 +1,66 @@
+﻿<div class="container" 
+     style="width: 70%;">
+
+    <div ng-controller="RankingController"
+         ng-init="getTopPlayer();">
+
+        <div id="Tabs" role="tabpanel">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="active">
+                    <a ng-click="getTopPlayer();" aria-controls="personal" role="tab" data-toggle="tab">
+                        Player
+                    </a>
+                </li>
+
+                <li>
+                    <a ng-click="getTopTeam();" aria-controls="employment" role="tab" data-toggle="tab">
+                        Team
+                    </a>
+                </li>
+
+                <li>
+                    <a ng-click="getTopTeamPlayer();" aria-controls="employment" role="tab" data-toggle="tab">
+                        Team Player
+                    </a>
+                </li>
+            </ul>
+
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="personal">
+                    <table class="table table-striped" style="align-content:center">
+                        <thead>
+                            <tr>
+                                <th align="center" style="text-align:center; width:30px">#</th>
+                                <th align="center" style="text-align:center">Name</th>
+                                <th align="center" style="text-align:center; width:100px">Points</th>
+                            </tr>
+                        </thead>
+                        <tbody style="text-align:center">
+                            <tr data-ng-repeat="rank in Rank">
+                                <td>
+                                    {{rank.Rank}}
+                                </td>
+                                <td>
+                                    <a> {{rank.Name}} </a>
+                                </td>
+                                <td ng-show="link !== 'TeamPlayer'">
+                                    {{rank.Points}}
+                                </td>
+                                <td ng-show="link === 'TeamPlayer'">
+                                    {{rank.TeamPoint}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <label >
+                        All Ranking 
+                        <a style="width: 100px; height: 100px;"
+                           class="glyphicon glyphicon-chevron-right"
+                           href="#/Info/Ranking/{{link}}" />
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
